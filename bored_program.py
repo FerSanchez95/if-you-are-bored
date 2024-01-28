@@ -24,14 +24,12 @@ class DoSometing():
         self.win.title("Want to do something?")
         width = 300
         height = 60
-        
         # The next lines are used to center the window.
         width_scr = self.win.winfo_screenwidth()
         height_scr = self.win.winfo_screenheight()
         x = int((width_scr/2) - (width/2))
         y = int((height_scr/2) - (height/2))
         self.win.geometry(f"{width}x{height}+{x}+{y}")
-        
         # Window content.
         main_message = Label(self.win, text="Press to found someting to do!", font=("bold", 10))
         main_message.pack(pady=3)
